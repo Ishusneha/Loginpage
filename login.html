@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index</title>
+    <style>
+      body,
+      html {
+        height: 100%;
+      }
+      body {
+        background-image: url("heh.jpeg");
+        background-repeat: no-repeat;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .full-page{
+        height: 100%;
+        width: 100%;
+        background-position: center;
+        background-size: cover;
+        position: absolute;
+      }
+      .navbar{
+        display:flex;
+        align-items: center;
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-right: 30px;
+      }
+      nav{
+        flex:1;
+        text-align: right;
+      }
+      nav ul{
+        display: inline-block;
+        list-style: none;
+      }
+      nav ul li{
+        display: inline-block;
+        margin-right: 70px;
+      }
+      nav ul li a{
+font-size: 25px;
+text-decoration: none;
+color: rgb(0, 0, 0);
+
+      }
+      nav ul li button{
+        font-size: 25px;
+        color: black;
+        outline:none;
+        border:none;
+        background: transparent;
+        cursor: pointer;
+        font-family: serif
+      }
+      nav ul li button:hover{
+        color: rgb(124, 84, 218);
+      }
+      nav ul li a:hover{
+        color: rgb(7, 101, 49);
+      }
+      .loginform{
+        position: absolute;
+        left:40%;
+        top:20%;
+        background-color: rgba(7, 8, 11, 0.249);
+        padding:20px;
+        font-size: 20px;
+        box-shadow: 2px 2px 5px 5px rgba(0, 0, 0, 0.589);
+        border-radius: 10px;
+      }
+      .submit{
+        background-color: rgba(21, 149, 145, 0.235);
+        font-size: 20px;
+        width: 85%;
+        padding: 3px 15px;
+       border-radius: 30px;
+       
+        
+        
+        
+      }
+
+    </style>
+  </head>
+  <body>
+    <nav>
+      <ul id="Menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="About Us.html">About Us</a></li>
+        <li><a href="Services.html">Services</a></li>
+        <li><a href="Contact.html">Contact</a></li>
+        <li>
+          <button
+            class="loginbtn"
+            onclick="document.getElementById('login').style.display='block'"
+            style="width: auto"
+          >
+            Login
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <div class="loginform">
+        <h2>Register</h2>
+        <form><pre>
+            <p>First Name:  <input type="text" id="name" name="name"></p> <hr> <p>Second Name: <input type="text" id="name" name="name"></p> <hr> <p>Email:       <input type="email" id="email" name="email"></p> <hr> <p>Password:    <input type="password" name="password" id="password"></p> <hr>
+  <input type="submit" class="submit" value="Submit">
+        </pre>
+        </form>
+    </div>
+  </body>
+</html>
